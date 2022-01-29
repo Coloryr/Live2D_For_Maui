@@ -1,0 +1,322 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM64">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM64">
+      <Configuration>Release</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x86">
+      <Configuration>Debug</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x86">
+      <Configuration>Release</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <AndroidBuildType>Gradle</AndroidBuildType>
+    <RootNamespace>Android1</RootNamespace>
+    <MinimumVisualStudioVersion>14.0</MinimumVisualStudioVersion>
+    <ProjectVersion>1.0</ProjectVersion>
+    <ProjectGuid>{a264f568-a067-4d67-ac60-5ae15cde9c64}</ProjectGuid>
+    <TargetExt>.aar</TargetExt>
+    <_PackagingProjectWithoutNativeComponent>true</_PackagingProjectWithoutNativeComponent>
+    <LaunchActivity Condition="'$(LaunchActivity)' == ''">com.Android1.Android1</LaunchActivity>
+    <JavaSourceRoots>src\main\java</JavaSourceRoots>
+  </PropertyGroup>
+  <Import Project="$(AndroidTargetsPath)\Android.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'" Label="Configuration">
+    <ConfigurationType>Library</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'" Label="Configuration">
+    <ConfigurationType>Library</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
+    <ConfigurationType>Library</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
+    <ConfigurationType>Library</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Library</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Library</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'" Label="Configuration">
+    <ConfigurationType>Library</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'" Label="Configuration">
+    <ConfigurationType>Library</ConfigurationType>
+  </PropertyGroup>
+  <Import Project="$(AndroidTargetsPath)\Android.props" />
+  <ItemDefinitionGroup>
+    <GradlePackage>
+      <ProjectDirectory>$(ProjectDir)app</ProjectDirectory>
+    </GradlePackage>
+  </ItemDefinitionGroup>
+  <ImportGroup Label="ExtensionSettings" />
+  <PropertyGroup Label="UserMacros" />
+  <ItemGroup>
+    <Content Include="app\build.gradle" />
+    <Content Include="app\CMakeLists.txt" />
+    <Content Include="app\src\main\AndroidManifest.xml" />
+    <Content Include="app\src\main\cpp\.vscode\settings.json" />
+    <Content Include="app\src\main\cpp\App\CMakeLists.txt" />
+    <Content Include="app\src\main\cpp\App\JniBridgeC.cpp" />
+    <Content Include="app\src\main\cpp\App\JniBridgeC.hpp" />
+    <Content Include="app\src\main\cpp\App\LAppAllocator.cpp" />
+    <Content Include="app\src\main\cpp\App\LAppAllocator.hpp" />
+    <Content Include="app\src\main\cpp\App\LAppDefine.cpp" />
+    <Content Include="app\src\main\cpp\App\LAppDefine.hpp" />
+    <Content Include="app\src\main\cpp\App\LAppDelegate.cpp" />
+    <Content Include="app\src\main\cpp\App\LAppDelegate.hpp" />
+    <Content Include="app\src\main\cpp\App\LAppLive2DManager.cpp" />
+    <Content Include="app\src\main\cpp\App\LAppLive2DManager.hpp" />
+    <Content Include="app\src\main\cpp\App\LAppModel.cpp" />
+    <Content Include="app\src\main\cpp\App\LAppModel.hpp" />
+    <Content Include="app\src\main\cpp\App\LAppPal.cpp" />
+    <Content Include="app\src\main\cpp\App\LAppPal.hpp" />
+    <Content Include="app\src\main\cpp\App\LAppSprite.cpp" />
+    <Content Include="app\src\main\cpp\App\LAppSprite.hpp" />
+    <Content Include="app\src\main\cpp\App\LAppTextureManager.cpp" />
+    <Content Include="app\src\main\cpp\App\LAppTextureManager.hpp" />
+    <Content Include="app\src\main\cpp\App\LAppView.cpp" />
+    <Content Include="app\src\main\cpp\App\LAppView.hpp" />
+    <Content Include="app\src\main\cpp\App\TouchManager.cpp" />
+    <Content Include="app\src\main\cpp\App\TouchManager.hpp" />
+    <Content Include="app\src\main\cpp\Core\dll\android\arm64-v8a\libLive2DCubismCore.so" />
+    <Content Include="app\src\main\cpp\Core\dll\android\armeabi-v7a\libLive2DCubismCore.so" />
+    <Content Include="app\src\main\cpp\Core\dll\android\x86\libLive2DCubismCore.so" />
+    <Content Include="app\src\main\cpp\Core\dll\android\x86_64\libLive2DCubismCore.so" />
+    <Content Include="app\src\main\cpp\Core\dll\experimental\rpi\libLive2DCubismCore.so" />
+    <Content Include="app\src\main\cpp\Core\dll\experimental\uwp\arm64\Live2DCubismCore.dll" />
+    <Content Include="app\src\main\cpp\Core\dll\experimental\uwp\arm\Live2DCubismCore.dll" />
+    <Content Include="app\src\main\cpp\Core\dll\experimental\uwp\x64\Live2DCubismCore.dll" />
+    <Content Include="app\src\main\cpp\Core\dll\experimental\uwp\x86\Live2DCubismCore.dll" />
+    <Content Include="app\src\main\cpp\Core\dll\linux\x86_64\libLive2DCubismCore.so" />
+    <Content Include="app\src\main\cpp\Core\dll\macos\libLive2DCubismCore.dylib" />
+    <Content Include="app\src\main\cpp\Core\dll\macos\Live2DCubismCore.bundle" />
+    <Content Include="app\src\main\cpp\Core\dll\windows\x86\Live2DCubismCore.dll" />
+    <Content Include="app\src\main\cpp\Core\dll\windows\x86\Live2DCubismCore.lib" />
+    <Content Include="app\src\main\cpp\Core\dll\windows\x86_64\Live2DCubismCore.dll" />
+    <Content Include="app\src\main\cpp\Core\dll\windows\x86_64\Live2DCubismCore.lib" />
+    <Content Include="app\src\main\cpp\Core\include\Live2DCubismCore.h" />
+    <Content Include="app\src\main\cpp\Core\lib\android\arm64-v8a\libLive2DCubismCore.a" />
+    <Content Include="app\src\main\cpp\Core\lib\android\armeabi-v7a\libLive2DCubismCore.a" />
+    <Content Include="app\src\main\cpp\Core\lib\android\x86\libLive2DCubismCore.a" />
+    <Content Include="app\src\main\cpp\Core\lib\android\x86_64\libLive2DCubismCore.a" />
+    <Content Include="app\src\main\cpp\Core\lib\experimental\catalyst\libLive2DCubismCore.a" />
+    <Content Include="app\src\main\cpp\Core\lib\experimental\rpi\libLive2DCubismCore.a" />
+    <Content Include="app\src\main\cpp\Core\lib\ios\Debug-iphoneos\libLive2DCubismCore.a" />
+    <Content Include="app\src\main\cpp\Core\lib\ios\Debug-iphonesimulator\libLive2DCubismCore.a" />
+    <Content Include="app\src\main\cpp\Core\lib\ios\Release-iphoneos\libLive2DCubismCore.a" />
+    <Content Include="app\src\main\cpp\Core\lib\ios\Release-iphonesimulator\libLive2DCubismCore.a" />
+    <Content Include="app\src\main\cpp\Core\lib\linux\x86_64\libLive2DCubismCore.a" />
+    <Content Include="app\src\main\cpp\Core\lib\macos\arm64\libLive2DCubismCore.a" />
+    <Content Include="app\src\main\cpp\Core\lib\macos\x86_64\libLive2DCubismCore.a" />
+    <Content Include="app\src\main\cpp\Core\lib\windows\x86\120\Live2DCubismCore_MD.lib" />
+    <Content Include="app\src\main\cpp\Core\lib\windows\x86\120\Live2DCubismCore_MDd.lib" />
+    <Content Include="app\src\main\cpp\Core\lib\windows\x86\120\Live2DCubismCore_MT.lib" />
+    <Content Include="app\src\main\cpp\Core\lib\windows\x86\120\Live2DCubismCore_MTd.lib" />
+    <Content Include="app\src\main\cpp\Core\lib\windows\x86\140\Live2DCubismCore_MD.lib" />
+    <Content Include="app\src\main\cpp\Core\lib\windows\x86\140\Live2DCubismCore_MDd.lib" />
+    <Content Include="app\src\main\cpp\Core\lib\windows\x86\140\Live2DCubismCore_MT.lib" />
+    <Content Include="app\src\main\cpp\Core\lib\windows\x86\140\Live2DCubismCore_MTd.lib" />
+    <Content Include="app\src\main\cpp\Core\lib\windows\x86\141\Live2DCubismCore_MD.lib" />
+    <Content Include="app\src\main\cpp\Core\lib\windows\x86\141\Live2DCubismCore_MDd.lib" />
+    <Content Include="app\src\main\cpp\Core\lib\windows\x86\141\Live2DCubismCore_MT.lib" />
+    <Content Include="app\src\main\cpp\Core\lib\windows\x86\141\Live2DCubismCore_MTd.lib" />
+    <Content Include="app\src\main\cpp\Core\lib\windows\x86\142\Live2DCubismCore_MD.lib" />
+    <Content Include="app\src\main\cpp\Core\lib\windows\x86\142\Live2DCubismCore_MDd.lib" />
+    <Content Include="app\src\main\cpp\Core\lib\windows\x86\142\Live2DCubismCore_MT.lib" />
+    <Content Include="app\src\main\cpp\Core\lib\windows\x86\142\Live2DCubismCore_MTd.lib" />
+    <Content Include="app\src\main\cpp\Core\lib\windows\x86_64\120\Live2DCubismCore_MD.lib" />
+    <Content Include="app\src\main\cpp\Core\lib\windows\x86_64\120\Live2DCubismCore_MDd.lib" />
+    <Content Include="app\src\main\cpp\Core\lib\windows\x86_64\120\Live2DCubismCore_MT.lib" />
+    <Content Include="app\src\main\cpp\Core\lib\windows\x86_64\120\Live2DCubismCore_MTd.lib" />
+    <Content Include="app\src\main\cpp\Core\lib\windows\x86_64\140\Live2DCubismCore_MD.lib" />
+    <Content Include="app\src\main\cpp\Core\lib\windows\x86_64\140\Live2DCubismCore_MDd.lib" />
+    <Content Include="app\src\main\cpp\Core\lib\windows\x86_64\140\Live2DCubismCore_MT.lib" />
+    <Content Include="app\src\main\cpp\Core\lib\windows\x86_64\140\Live2DCubismCore_MTd.lib" />
+    <Content Include="app\src\main\cpp\Core\lib\windows\x86_64\141\Live2DCubismCore_MD.lib" />
+    <Content Include="app\src\main\cpp\Core\lib\windows\x86_64\141\Live2DCubismCore_MDd.lib" />
+    <Content Include="app\src\main\cpp\Core\lib\windows\x86_64\141\Live2DCubismCore_MT.lib" />
+    <Content Include="app\src\main\cpp\Core\lib\windows\x86_64\141\Live2DCubismCore_MTd.lib" />
+    <Content Include="app\src\main\cpp\Core\lib\windows\x86_64\142\Live2DCubismCore_MD.lib" />
+    <Content Include="app\src\main\cpp\Core\lib\windows\x86_64\142\Live2DCubismCore_MDd.lib" />
+    <Content Include="app\src\main\cpp\Core\lib\windows\x86_64\142\Live2DCubismCore_MT.lib" />
+    <Content Include="app\src\main\cpp\Core\lib\windows\x86_64\142\Live2DCubismCore_MTd.lib" />
+    <Content Include="app\src\main\cpp\Framework\CMakeLists.txt" />
+    <Content Include="app\src\main\cpp\Framework\src\CMakeLists.txt" />
+    <Content Include="app\src\main\cpp\Framework\src\CubismCdiJson.cpp" />
+    <Content Include="app\src\main\cpp\Framework\src\CubismCdiJson.hpp" />
+    <Content Include="app\src\main\cpp\Framework\src\CubismDefaultParameterId.cpp" />
+    <Content Include="app\src\main\cpp\Framework\src\CubismDefaultParameterId.hpp" />
+    <Content Include="app\src\main\cpp\Framework\src\CubismFramework.cpp" />
+    <Content Include="app\src\main\cpp\Framework\src\CubismFramework.hpp" />
+    <Content Include="app\src\main\cpp\Framework\src\CubismFrameworkConfig.hpp" />
+    <Content Include="app\src\main\cpp\Framework\src\CubismJsonHolder.hpp" />
+    <Content Include="app\src\main\cpp\Framework\src\CubismModelSettingJson.cpp" />
+    <Content Include="app\src\main\cpp\Framework\src\CubismModelSettingJson.hpp" />
+    <Content Include="app\src\main\cpp\Framework\src\Effect\CMakeLists.txt" />
+    <Content Include="app\src\main\cpp\Framework\src\Effect\CubismBreath.cpp" />
+    <Content Include="app\src\main\cpp\Framework\src\Effect\CubismBreath.hpp" />
+    <Content Include="app\src\main\cpp\Framework\src\Effect\CubismEyeBlink.cpp" />
+    <Content Include="app\src\main\cpp\Framework\src\Effect\CubismEyeBlink.hpp" />
+    <Content Include="app\src\main\cpp\Framework\src\Effect\CubismPose.cpp" />
+    <Content Include="app\src\main\cpp\Framework\src\Effect\CubismPose.hpp" />
+    <Content Include="app\src\main\cpp\Framework\src\ICubismAllocator.hpp" />
+    <Content Include="app\src\main\cpp\Framework\src\ICubismModelSetting.hpp" />
+    <Content Include="app\src\main\cpp\Framework\src\Id\CMakeLists.txt" />
+    <Content Include="app\src\main\cpp\Framework\src\Id\CubismId.cpp" />
+    <Content Include="app\src\main\cpp\Framework\src\Id\CubismId.hpp" />
+    <Content Include="app\src\main\cpp\Framework\src\Id\CubismIdManager.cpp" />
+    <Content Include="app\src\main\cpp\Framework\src\Id\CubismIdManager.hpp" />
+    <Content Include="app\src\main\cpp\Framework\src\Live2DCubismCore.hpp" />
+    <Content Include="app\src\main\cpp\Framework\src\Math\CMakeLists.txt" />
+    <Content Include="app\src\main\cpp\Framework\src\Math\CubismMath.cpp" />
+    <Content Include="app\src\main\cpp\Framework\src\Math\CubismMath.hpp" />
+    <Content Include="app\src\main\cpp\Framework\src\Math\CubismMatrix44.cpp" />
+    <Content Include="app\src\main\cpp\Framework\src\Math\CubismMatrix44.hpp" />
+    <Content Include="app\src\main\cpp\Framework\src\Math\CubismModelMatrix.cpp" />
+    <Content Include="app\src\main\cpp\Framework\src\Math\CubismModelMatrix.hpp" />
+    <Content Include="app\src\main\cpp\Framework\src\Math\CubismTargetPoint.cpp" />
+    <Content Include="app\src\main\cpp\Framework\src\Math\CubismTargetPoint.hpp" />
+    <Content Include="app\src\main\cpp\Framework\src\Math\CubismVector2.cpp" />
+    <Content Include="app\src\main\cpp\Framework\src\Math\CubismVector2.hpp" />
+    <Content Include="app\src\main\cpp\Framework\src\Math\CubismViewMatrix.cpp" />
+    <Content Include="app\src\main\cpp\Framework\src\Math\CubismViewMatrix.hpp" />
+    <Content Include="app\src\main\cpp\Framework\src\Model\CMakeLists.txt" />
+    <Content Include="app\src\main\cpp\Framework\src\Model\CubismMoc.cpp" />
+    <Content Include="app\src\main\cpp\Framework\src\Model\CubismMoc.hpp" />
+    <Content Include="app\src\main\cpp\Framework\src\Model\CubismModel.cpp" />
+    <Content Include="app\src\main\cpp\Framework\src\Model\CubismModel.hpp" />
+    <Content Include="app\src\main\cpp\Framework\src\Model\CubismModelUserData.cpp" />
+    <Content Include="app\src\main\cpp\Framework\src\Model\CubismModelUserData.hpp" />
+    <Content Include="app\src\main\cpp\Framework\src\Model\CubismModelUserDataJson.cpp" />
+    <Content Include="app\src\main\cpp\Framework\src\Model\CubismModelUserDataJson.hpp" />
+    <Content Include="app\src\main\cpp\Framework\src\Model\CubismUserModel.cpp" />
+    <Content Include="app\src\main\cpp\Framework\src\Model\CubismUserModel.hpp" />
+    <Content Include="app\src\main\cpp\Framework\src\Motion\ACubismMotion.cpp" />
+    <Content Include="app\src\main\cpp\Framework\src\Motion\ACubismMotion.hpp" />
+    <Content Include="app\src\main\cpp\Framework\src\Motion\CMakeLists.txt" />
+    <Content Include="app\src\main\cpp\Framework\src\Motion\CubismExpressionMotion.cpp" />
+    <Content Include="app\src\main\cpp\Framework\src\Motion\CubismExpressionMotion.hpp" />
+    <Content Include="app\src\main\cpp\Framework\src\Motion\CubismMotion.cpp" />
+    <Content Include="app\src\main\cpp\Framework\src\Motion\CubismMotion.hpp" />
+    <Content Include="app\src\main\cpp\Framework\src\Motion\CubismMotionInternal.hpp" />
+    <Content Include="app\src\main\cpp\Framework\src\Motion\CubismMotionJson.cpp" />
+    <Content Include="app\src\main\cpp\Framework\src\Motion\CubismMotionJson.hpp" />
+    <Content Include="app\src\main\cpp\Framework\src\Motion\CubismMotionManager.cpp" />
+    <Content Include="app\src\main\cpp\Framework\src\Motion\CubismMotionManager.hpp" />
+    <Content Include="app\src\main\cpp\Framework\src\Motion\CubismMotionQueueEntry.cpp" />
+    <Content Include="app\src\main\cpp\Framework\src\Motion\CubismMotionQueueEntry.hpp" />
+    <Content Include="app\src\main\cpp\Framework\src\Motion\CubismMotionQueueManager.cpp" />
+    <Content Include="app\src\main\cpp\Framework\src\Motion\CubismMotionQueueManager.hpp" />
+    <Content Include="app\src\main\cpp\Framework\src\Physics\CMakeLists.txt" />
+    <Content Include="app\src\main\cpp\Framework\src\Physics\CubismPhysics.cpp" />
+    <Content Include="app\src\main\cpp\Framework\src\Physics\CubismPhysics.hpp" />
+    <Content Include="app\src\main\cpp\Framework\src\Physics\CubismPhysicsInternal.hpp" />
+    <Content Include="app\src\main\cpp\Framework\src\Physics\CubismPhysicsJson.cpp" />
+    <Content Include="app\src\main\cpp\Framework\src\Physics\CubismPhysicsJson.hpp" />
+    <Content Include="app\src\main\cpp\Framework\src\Rendering\CMakeLists.txt" />
+    <Content Include="app\src\main\cpp\Framework\src\Rendering\Cocos2d\CMakeLists.txt" />
+    <Content Include="app\src\main\cpp\Framework\src\Rendering\Cocos2d\CubismCommandBuffer_Cocos2dx.cpp" />
+    <Content Include="app\src\main\cpp\Framework\src\Rendering\Cocos2d\CubismCommandBuffer_Cocos2dx.hpp" />
+    <Content Include="app\src\main\cpp\Framework\src\Rendering\Cocos2d\CubismOffscreenSurface_Cocos2dx.cpp" />
+    <Content Include="app\src\main\cpp\Framework\src\Rendering\Cocos2d\CubismOffscreenSurface_Cocos2dx.hpp" />
+    <Content Include="app\src\main\cpp\Framework\src\Rendering\Cocos2d\CubismRenderer_Cocos2dx.cpp" />
+    <Content Include="app\src\main\cpp\Framework\src\Rendering\Cocos2d\CubismRenderer_Cocos2dx.hpp" />
+    <Content Include="app\src\main\cpp\Framework\src\Rendering\CubismRenderer.cpp" />
+    <Content Include="app\src\main\cpp\Framework\src\Rendering\CubismRenderer.hpp" />
+    <Content Include="app\src\main\cpp\Framework\src\Rendering\D3D11\CMakeLists.txt" />
+    <Content Include="app\src\main\cpp\Framework\src\Rendering\D3D11\CubismNativeInclude_D3D11.hpp" />
+    <Content Include="app\src\main\cpp\Framework\src\Rendering\D3D11\CubismOffscreenSurface_D3D11.cpp" />
+    <Content Include="app\src\main\cpp\Framework\src\Rendering\D3D11\CubismOffscreenSurface_D3D11.hpp" />
+    <Content Include="app\src\main\cpp\Framework\src\Rendering\D3D11\CubismRenderer_D3D11.cpp" />
+    <Content Include="app\src\main\cpp\Framework\src\Rendering\D3D11\CubismRenderer_D3D11.hpp" />
+    <Content Include="app\src\main\cpp\Framework\src\Rendering\D3D11\CubismRenderState_D3D11.cpp" />
+    <Content Include="app\src\main\cpp\Framework\src\Rendering\D3D11\CubismRenderState_D3D11.hpp" />
+    <Content Include="app\src\main\cpp\Framework\src\Rendering\D3D11\CubismShader_D3D11.cpp" />
+    <Content Include="app\src\main\cpp\Framework\src\Rendering\D3D11\CubismShader_D3D11.hpp" />
+    <Content Include="app\src\main\cpp\Framework\src\Rendering\D3D11\CubismType_D3D11.hpp" />
+    <Content Include="app\src\main\cpp\Framework\src\Rendering\D3D9\CMakeLists.txt" />
+    <Content Include="app\src\main\cpp\Framework\src\Rendering\D3D9\CubismNativeInclude_D3D9.hpp" />
+    <Content Include="app\src\main\cpp\Framework\src\Rendering\D3D9\CubismOffscreenSurface_D3D9.cpp" />
+    <Content Include="app\src\main\cpp\Framework\src\Rendering\D3D9\CubismOffscreenSurface_D3D9.hpp" />
+    <Content Include="app\src\main\cpp\Framework\src\Rendering\D3D9\CubismRenderer_D3D9.cpp" />
+    <Content Include="app\src\main\cpp\Framework\src\Rendering\D3D9\CubismRenderer_D3D9.hpp" />
+    <Content Include="app\src\main\cpp\Framework\src\Rendering\D3D9\CubismRenderState_D3D9.cpp" />
+    <Content Include="app\src\main\cpp\Framework\src\Rendering\D3D9\CubismRenderState_D3D9.hpp" />
+    <Content Include="app\src\main\cpp\Framework\src\Rendering\D3D9\CubismShader_D3D9.cpp" />
+    <Content Include="app\src\main\cpp\Framework\src\Rendering\D3D9\CubismShader_D3D9.hpp" />
+    <Content Include="app\src\main\cpp\Framework\src\Rendering\D3D9\CubismType_D3D9.hpp" />
+    <Content Include="app\src\main\cpp\Framework\src\Rendering\Metal\CMakeLists.txt" />
+    <Content Include="app\src\main\cpp\Framework\src\Rendering\Metal\CubismCommandBuffer_Metal.hpp" />
+    <Content Include="app\src\main\cpp\Framework\src\Rendering\Metal\CubismCommandBuffer_Metal.mm" />
+    <Content Include="app\src\main\cpp\Framework\src\Rendering\Metal\CubismOffscreenSurface_Metal.hpp" />
+    <Content Include="app\src\main\cpp\Framework\src\Rendering\Metal\CubismOffscreenSurface_Metal.mm" />
+    <Content Include="app\src\main\cpp\Framework\src\Rendering\Metal\CubismRenderer_Metal.hpp" />
+    <Content Include="app\src\main\cpp\Framework\src\Rendering\Metal\CubismRenderer_Metal.mm" />
+    <Content Include="app\src\main\cpp\Framework\src\Rendering\Metal\CubismRenderingInstanceSingleton_Metal.h" />
+    <Content Include="app\src\main\cpp\Framework\src\Rendering\Metal\CubismRenderingInstanceSingleton_Metal.m" />
+    <Content Include="app\src\main\cpp\Framework\src\Rendering\Metal\MetalShaders.metal" />
+    <Content Include="app\src\main\cpp\Framework\src\Rendering\Metal\MetalShaderTypes.h" />
+    <Content Include="app\src\main\cpp\Framework\src\Rendering\OpenGL\CMakeLists.txt" />
+    <Content Include="app\src\main\cpp\Framework\src\Rendering\OpenGL\CubismOffscreenSurface_OpenGLES2.cpp" />
+    <Content Include="app\src\main\cpp\Framework\src\Rendering\OpenGL\CubismOffscreenSurface_OpenGLES2.hpp" />
+    <Content Include="app\src\main\cpp\Framework\src\Rendering\OpenGL\CubismRenderer_OpenGLES2.cpp" />
+    <Content Include="app\src\main\cpp\Framework\src\Rendering\OpenGL\CubismRenderer_OpenGLES2.hpp" />
+    <Content Include="app\src\main\cpp\Framework\src\Type\CMakeLists.txt" />
+    <Content Include="app\src\main\cpp\Framework\src\Type\csmMap.hpp" />
+    <Content Include="app\src\main\cpp\Framework\src\Type\csmRectF.cpp" />
+    <Content Include="app\src\main\cpp\Framework\src\Type\csmRectF.hpp" />
+    <Content Include="app\src\main\cpp\Framework\src\Type\csmString.cpp" />
+    <Content Include="app\src\main\cpp\Framework\src\Type\csmString.hpp" />
+    <Content Include="app\src\main\cpp\Framework\src\Type\csmVector.hpp" />
+    <Content Include="app\src\main\cpp\Framework\src\Type\CubismBasicType.hpp" />
+    <Content Include="app\src\main\cpp\Framework\src\Utils\CMakeLists.txt" />
+    <Content Include="app\src\main\cpp\Framework\src\Utils\CubismDebug.cpp" />
+    <Content Include="app\src\main\cpp\Framework\src\Utils\CubismDebug.hpp" />
+    <Content Include="app\src\main\cpp\Framework\src\Utils\CubismJson.cpp" />
+    <Content Include="app\src\main\cpp\Framework\src\Utils\CubismJson.hpp" />
+    <Content Include="app\src\main\cpp\Framework\src\Utils\CubismString.cpp" />
+    <Content Include="app\src\main\cpp\Framework\src\Utils\CubismString.hpp" />
+    <Content Include="app\src\main\cpp\OpenGL\stb\README.md" />
+    <Content Include="app\src\main\cpp\OpenGL\stb\stb_image.h" />
+    <Content Include="build.gradle" />
+    <Content Include="settings.gradle" />
+  </ItemGroup>
+  <ItemGroup>
+    <AntProjectPropertiesFile Include="gradle.properties" />
+    <AntProjectPropertiesFile Include="gradle\wrapper\gradle-wrapper.properties" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="app\src\main\java\" />
+    <Folder Include="app\src\main\res\" />
+  </ItemGroup>
+  <Import Project="$(AndroidTargetsPath)\Android.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

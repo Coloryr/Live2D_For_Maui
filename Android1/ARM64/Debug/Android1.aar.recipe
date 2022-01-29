@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project>
+  <SOLibPaths />
+  <AndroidLibPaths>C:\Users\40206\Desktop\app\MauiApp1\Android1\ARM64\Debug\Android1.aar;C:\Users\40206\Desktop\app\MauiApp1\Android1\app</AndroidLibPaths>
+  <OObjPaths />
+  <Configuration />
+  <Platform />
+  <AndroidArchitecture>arm64-v8a</AndroidArchitecture>
+  <!--links to other recipe files-->
+  <RecipeFiles />
+</project>
